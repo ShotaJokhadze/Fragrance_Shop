@@ -2,20 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font1: "DM Sans", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  font-family: var(--font1);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  transform: scale(2);
+  transform-origin: center;
+}
+
+.hover-underline-animation {
+  @apply relative transition-colors duration-300 ease-in-out;
+}
+
+.hover-underline-animation::before {
+  content: "";
+  @apply absolute bottom-0 w-full h-[3px] bg-red scale-x-0 transition-transform duration-300 ease-in-out;
+}
+
+.hover-underline-animation:hover {
+  @apply text-red;
+}
+
+.hover-underline-animation:hover::before {
+  @apply scale-x-100;
+}
+
+button {
+  border: 1px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
 }
