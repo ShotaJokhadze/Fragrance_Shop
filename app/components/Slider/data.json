@@ -1,14 +1,39 @@
-[
+{
+"slider-data": [
   {
     "id": 1,
-    "title": "ARE AWESOME",
-    "tagline": "NEXTJS 13 & SWIPER SLIDER",
-    "image": "/image1.jpg"
+    "title": "Discover Your Signature Scent",
+    "description": "Explore a curated collection of timeless classics and modern masterpieces. Elevate your style with fragrances that speak to your soul.",
+    "image": "/images/creed.jpg"
   },
   {
     "id": 2,
-    "title": "GIVE IT A SHOOT",
-    "tagline": "IF YOU LIKE IT",
-    "image": "/image2.jpg"
+    "title": "Unleash the Power of Scent",
+    "description": "Step into a world of alluring scents and unforgettable moments. The perfect fragrance awaits you.",
+    "image": "/images/Hacivat.jpg"
+  }
+],
+"new-arrivals": [
+  {
+    "id": 1,
+    "title": "African Leather",
+    "brand": "Memo Paris",
+    "description": "A bold and exotic fragrance inspired by the vast African savannah. Rich leather notes blend with spicy, woody undertones to create an unforgettable scent.",
+    "image": "/images/africanLeather.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Sauvage Elixir",
+    "brand": "Dior",
+    "description": "An intense and refined interpretation of the iconic Sauvage. Spicy, aromatic, and woody, this fragrance embodies raw masculinity with a touch of elegance.",
+    "image": "/images/sauvageElexir.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Casamorati Mefisto",
+    "brand": "Xerjoff",
+    "description": "A sophisticated, aromatic fragrance with a rich blend of citrus, lavender, and warm woods. Mefisto offers an elegant balance of freshness and depth.",
+    "image": "/images/casamoratiMefisto.jpg"
   }
 ]
+}

@@ -1,17 +1,24 @@
-import Image from "next/image";
 import DemoSlider from './components/Slider/Slider';
-import dataSlider from "./components/Slider/data.json"
-
+import data from "./components/Slider/data.json"
+import NewArrivals from "./components/NewArrivals/NewArrivals";
+import WhyUs from './components/WhyUs/WhyUs';
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <section className='w-full'>
-      <div className="h-screen">
-        <ul className='h-full w-full'>
-          <DemoSlider data={dataSlider}/>
-        </ul>
-      </div>
-    </section>
+    <main className="h-full"
+    >
+      <section className='w-full h-[80vh] bg-customBlack pb-5'>
+        <div className="h-full">
+          <ul className='h-full w-full'>
+            <DemoSlider data={data["slider-data"]}/>
+          </ul>
+        </div>
+      </section>
+      <section >
+        <NewArrivals data={data['new-arrivals']}/> 
+      </section>
+      <section>
+      <WhyUs />
+      </section>
     </main>
   );
 }

@@ -6,6 +6,10 @@
 
 :root {
   --font1: "DM Sans", sans-serif;
+  --blue: #2176ff;
+  --light: #d4d4dc;
+  --darkGray: #1d1e22;
+  --mediumGray: #393f4d;
 }
 
 * {
@@ -31,6 +35,10 @@ h1 {
   width: 100%;
 }
 
+.swiper-pagination-bullet {
+  background-color: var(--light) !important;
+}
+
 .swiper .swiper-pagination-bullet-active {
   transform: scale(2);
   transform-origin: center;
@@ -42,11 +50,11 @@ h1 {
 
 .hover-underline-animation::before {
   content: "";
-  @apply absolute bottom-0 w-full h-[3px] bg-red scale-x-0 transition-transform duration-300 ease-in-out;
+  @apply absolute bottom-0 w-full h-[3px] bg-blue scale-x-0 transition-transform duration-300 ease-in-out;
 }
 
 .hover-underline-animation:hover {
-  @apply text-red;
+  @apply text-blue;
 }
 
 .hover-underline-animation:hover::before {
@@ -58,4 +66,8 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--blue) !important;
 }

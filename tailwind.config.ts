@@ -9,10 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        red: "rgb(239 68 68)",
+        blue: "#2176ff",
         light: "#d4d4dc",
-        darkGray: "#1d1e22",
+        darkGray: "#212529",
         mediumGray: "#393f4d",
+        customBlack : '#030504',
       },
     },
   },

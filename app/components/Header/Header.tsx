@@ -6,16 +6,16 @@ import { CgProfile, } from "react-icons/cg";
 import { CiSettings } from "react-icons/ci";
 import { FaShoppingBasket } from "react-icons/fa";
 import { GoSignOut } from "react-icons/go";
-
+import logo from '../../../public/images/Logo.jpg';
 
 export default function Header() {
   const [profileOpen, setProfileOpen] = useState(false);
-
+  console.log(logo.src)
   return (
-    <nav id='topnav' className='bg-darkGray  w-full z-50 fixed text-light dark:bg-light dark:text-darkGray'>
-    <div className="navbar-container relative flex w-4/5 max-w-screen-xl justify-between mx-auto">
-      <div className="logo p-3">
-          <Link className='w-full h-full block text-3xl hover:scale-110 transition-all' href="/">
+    <nav id='topnav' className='bg-darkGray h-20 w-full z-50 fixed text-light dark:bg-mediumGray dark:text-light text-lg '>
+    <div className="navbar-container relative flex w-4/5 h-full max-w-screen-xl justify-between mx-auto">
+      <div className="logo p-3 flex items-center">
+          <Link className='w-full  block text-3xl hover:scale-110 transition-all' href="/">
             Arôme
           </Link>
       </div>
@@ -48,11 +48,11 @@ export default function Header() {
           onMouseEnter={() => setProfileOpen(true)}
           onMouseLeave={() => setProfileOpen(false)}>
         <CgProfile className="text-2xl"/>
-        <ul className={`absolute top-full right-0 bg-light text-nowrap text-darkGray rounded-md min-w-40 py-2 transition-opacity duration-200 ${profileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-          <li className="flex items-center gap-1 cursor-pointer p-2 hover:translate-x-1 hover:underline transition-all"><CiSettings className="text-xl"/>Profile</li>
-          <li className="flex items-center gap-1 cursor-pointer p-2 hover:translate-x-1 hover:underline transition-all"><FaShoppingBasket className="text-xl"/>My Orders</li>
+        <ul className={`absolute top-full right-0 bg-mediumGray text-nowrap text-light rounded-md min-w-40 py-2 transition-opacity duration-200 ${profileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+          <li className="flex items-center gap-1 cursor-pointer p-2 hover:text-blue hover:translate-x-1 hover:underline transition-all"><CiSettings className="text-xl"/>Profile</li>
+          <li className="flex items-center gap-1 cursor-pointer p-2 hover:text-blue hover:translate-x-1 hover:underline transition-all"><FaShoppingBasket className="text-xl"/>My Orders</li>
           <div className="border-t-[0.5px] border-darkGray mt-2"></div>
-          <li className="flex items-center gap-1 cursor-pointer p-2 hover:translate-x-1 hover:underline transition-all"><GoSignOut className="text-xl"/>
+          <li className="flex items-center gap-1 cursor-pointer p-2 hover:text-blue hover:translate-x-1 hover:underline transition-all"><GoSignOut className="text-xl"/>
           Sign Out</li>
         </ul>
       </div>  

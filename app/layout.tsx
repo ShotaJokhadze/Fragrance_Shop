@@ -16,11 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body
       >
-        <div className="page w-full min-h-screen bg-light text-darkGray dark:bg-darkGray dark:text-light">
+        <div className="page w-full min-h-dvh bg-light text-darkGray dark:bg-darkGray dark:text-light">
           <Header />  
-
               {children}
-
         </div>
       </body>
     </html>
